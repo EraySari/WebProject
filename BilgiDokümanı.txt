@@ -12,4 +12,3 @@ Kullanıcı adı ve şifre ile sayfada oturum açılabilecek.
 Web sitesini oluşturuken HTML,CSS,Bootstrap,PHP,Javascript kullanılacak.
 Proje sıfırdan GitHub ’a yüklenip her gelişmede commit edilecek.
 
-GitHub Link:  https://github.com/EraySari/Web-Tek-Proje

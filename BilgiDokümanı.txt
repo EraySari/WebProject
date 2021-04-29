@@ -1,0 +1,15 @@
+Web Teknolojileri Proje Ödevi Hakkında Kısa Bilgi Dokümanı
+
+Memleket: ORDU	
+Bölge: Karadeniz	
+Nüfus: 771.932 (2019)
+Gezilecek Yerler: Boztepe, Ulugöl, Yason Kilisesi, Perşembe Yaylası, Çambaşı Kayak Merkezi, Yason Burnu, Etnografya Müzes
+Sevdiğim Spor ve Etkinlikler:  Futbol, F1
+
+Bu bilgilerin yanında eğitim bilgilerim, hakkımda ,şehrin takımı hakkında bilgilerin de tanıtıldığı kişisel bir web sayfası yapılacak. 
+Sevdiğim spor,etkinlik gibi bilgiler fotoğraflarla desteklenecek.
+Kullanıcı adı ve şifre ile sayfada oturum açılabilecek. 
+Web sitesini oluşturuken HTML,CSS,Bootstrap,PHP,Javascript kullanılacak.
+Proje sıfırdan GitHub ’a yüklenip her gelişmede commit edilecek.
+
+GitHub Link:  https://github.com/EraySari/Web-Tek-Proje

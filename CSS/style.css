@@ -1,100 +1,300 @@
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
 }
-.bg-color-dark{
-    background-color: #28b5b5;
+.bg-dark1{
+    background-color: #F5F4EB;
 }
-#navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    height: 70px;
+.navbar{
+    z-index: 1;
 }
-#navbar ul{
-    margin: 10px;
-}
-#isim-link a{
+.navbar-brand{
+    color: #61892F;
     font-size: 2rem;
-    color: black;
     transition: 1s;
 }
-#isim-link a:hover{
-    color: rgb(132, 203, 139);
-    font-size: 2.1rem;
-}
-#linkler a:hover{
-
-    color: rgb(38, 39, 44);
-    border-bottom: 2px solid rgb(132, 203, 139);
-}
-#linkler a{
-    font-size: 1rem;
-    padding: 0 0.5rem;
-    transition: 0.5s;
+.navbar-brand:hover{
+    font-size: 1.5rem;
+    color: rgb(7, 205, 231);
     
 }
-.icerik{
-    width: 45%;
-    height: auto;
-    margin-right: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 15);
-    padding: 10px;
-    background-color: grey;
+.nav-link{
+    color: #61892F;
+    font-weight: bold;
 }
-.rsm{
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 15);
-    transition: 0.8s;
+.nav-item a:hover{
+    color: rgb(7, 205, 231);
 }
-.rsm:hover{
-    opacity: 0.6;
+#mainMenu{
+    background: url("../images/banner.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
-.icerikmetin{ 
-    margin: 10px;
+#black{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.4;
 }
-.btn-devam{
-    width: 150px;
-    height: 50px;
-    padding: 7px;
-    background-color: #0071ce;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-.btn-devam:hover{
-    color: #0071ce;
-    background-color: white;
-}
-.detay{
-    display: flex;
-    flex-direction: row;
-    margin: 30px;
-}
-.hakkimda{
-    border-bottom: 2px solid rgb(132, 203, 139);
-   
-}
-.hakkimdaYazi{
+#kapakMetin{
+    position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 0 50px;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
 }
-.hakkimdaLink a{
-    margin: 15px;
-    transition: 0.5s;
+#kapakMetin h3{
+    font-size: 5.5rem;
+    color: rgb(167, 167, 167);
+    text-shadow: 1px 1px 1px black;
 }
-.hakkimdaLink a:hover{
-    color:rgb(132, 203, 139)
+#kapakMetin i{
+    color: rgb(167, 167, 167);
+    font-size: 6rem;
+    text-shadow: 1px 1px 1px black;
 }
-.sporlar{
-    border-bottom: 2px solid rgb(132, 203, 139);
+.container p{
+    font-weight: bold;
+    line-height: 2rem;
+    margin-bottom: 40px;
+}
+.container a{
+    color: black;
+    padding: 10px;
+}
+.f1-photo img{
+    width: 60%;
+    height: 23rem;
+    margin-bottom: 10px;
+    border: 2px solid #61892F;
+}
+.slider_img{
+    height: 30rem;
+}
+#hakkimda-tanim img{
+    width: 30%;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+}
+#social-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gezilecek_yerler{
+    display: flex;
+    flex-direction: column;
+}
+.cizgi{
+    border: 2px solid black;
+    max-width: 300px;
+    margin-right:auto;
+    margin:40px auto;
+}
+.icon{
+    position: relative;
+    font-size: 40px;
+    top: -70px;
+    background-color:white ;
+    padding:10px;
+}
+.card{
+    border: 2px solid #61892F;
+    max-width: 50%;
+}
+.card img{
+    height: 15rem;
+}
+.card-body{
+    background-color:#F5F4EB ;
 }
 
+/* Mirasımız CSS*/
+.section-yason h3{
+    font-size: 5rem;
+    color: #212529;
+}
+.section-yason h5{
+    font-size: 2rem;
+    color: #61892F;
+}
+.section-yason-bg p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #636464;
+}
+.section-yason-bg{
+    background: url("../images/tasbasibg.jpg") center center no-repeat;
+    background-size: cover;
+    height: 75vh;
+    padding:20px;
+    text-align: end;
+}
+.yason-bilgi{
+    background-color: #F5F4EB;
+    padding:30px ;
+    margin-bottom: 1.5rem;
+}
+.yason-bilgi p{
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+.resimler img{
+    width: 70%;
+    height: 30rem;
+    margin-bottom: 10px;
+}
 
+/* Giriş CSS */
+.login{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    
+}
+.login-bg{
+    background: url("../images/login.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.login-title{
+    font-size: 2.5rem;
+    color: #F5F4EB;
+    margin-bottom: 5rem;
+}
+.gray{
+    background-color: gray;
+    width: 45%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+.form-group{
+    margin-bottom: 1.5rem;
+}
+.form-group input{
+    width: 20rem;
+    padding: 10px;
+    border: 1px solid #61892F;
+    border-radius: 20px;
+}
+.form-group input:focus{
+    outline: 0;
+    border: 2px solid #b1dd13;
+}
+.login-form label{
+    color: #F5F4EB;
+}
+.btn{
+    width: 20rem;
+    border: 2px solid #61892F;
+    border-radius: 15px;
+    color: #61892F;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+.btn:hover{
+    background-color: #61892F;
+    color: #F5F4EB;
+    border: 2px solid #F5F4EB;
+}
+@media screen and (max-width: 992px) {
+    /*Ana Menü*/
+    .f1-photo img{
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 10px;
+        border: 2px solid #61892F;
+    }
+    .card{
+        max-width: 100%;
+    }
+    /*LOGİN*/
 
+    .login{
+        width: 60%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        
+    }
+    .gray{
+        width: 60%;
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    /*Mirasımız*/
+
+    .resimler img{
+        height: 20rem;
+    }
+
+    /*Sehrim*/
+}
+@media screen and (max-width: 576px) { 
+    
+    /* Ana Sayfa */
+
+    #kapakMetin h3{
+        font-size: 3rem;
+    }
+    #kapakMetin i{
+        font-size: 3rem;
+    }
+    .f1-photo img{
+        width: 100%;
+        height: 10rem;
+        margin-bottom: 10px;
+        border: 1px solid #61892F;
+    }
+
+    /*Mirasımız*/
+
+    .section-yason h3{
+        font-size: 3rem;
+        color: #212529;
+    }
+    .section-yason p{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #636464;
+    }
+    .resimler img{
+        height: 15rem;
+    }
+
+    /*Sehrim*/
+
+    .card img{
+        height: 15rem;
+    }
+
+    /*LOGİN*/
+
+    .login{
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+            
+    }
+    .gray{
+        width: 100%;
+        height: 100vh;
+    }
+}
+    

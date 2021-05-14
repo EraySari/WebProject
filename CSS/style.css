@@ -6,6 +6,7 @@
 .bg-dark1{
     background-color: #F5F4EB;
 }
+/* NAVBAR */
 .navbar{
     z-index: 1;
 }
@@ -26,6 +27,28 @@
 .nav-item a:hover{
     color: rgb(7, 205, 231);
 }
+/* FOOTER*/
+
+.footer{
+    height:auto;
+    background-color: rgb(34, 34, 34);
+    color:#F5F4EB;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-text{
+    font-size: 1.2rem;
+}
+.footer a{
+    list-style-type: none;
+    color: #F5F4EB;
+    margin-right: 15px;
+}
+/* Ana Menü */
 #mainMenu{
     background: url("../images/banner.jpg") center center no-repeat;
     background-size: cover;
@@ -73,18 +96,68 @@
     margin-bottom: 10px;
     border: 2px solid #61892F;
 }
-.slider_img{
-    height: 30rem;
-}
 #hakkimda-tanim img{
     width: 30%;
     margin-bottom: 2rem;
     border-radius: 100%;
+
 }
-#social-i{
+/*Ozgecmis*/
+.ozgecmis{
+    display: flex;
+    flex-direction: row;
+}
+.ozgecmis-color{
+    color: rgb(194, 127, 103);
+}
+.left-nav{
+    background-color: rgb(187, 91, 56);
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ana-icerik{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cv-img{
+    width: 180px;
+    height: 180px;
+    border: 10px solid rgb(194, 127, 103);
+    border-radius: 100px;
+}
+#iletisim{
+    display: flex;
+    flex-direction: column;
+}
+#iletisim a{
+    color: #F5F4EB;
+    margin-bottom: 10px;
+}
+.ana-icerik ul{
+    list-style-type: none;
+    font-weight: bold;
+}
+.diller{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.diller i{
+    margin: 10px;
+    color: rgb(187, 91, 56);
+    font-size: 5rem;
+}
+/* Şehrim */
+
+.slider_img{
+    height: 30rem;
 }
 .gezilecek_yerler{
     display: flex;
@@ -114,7 +187,7 @@
     background-color:#F5F4EB ;
 }
 
-/* Mirasımız CSS*/
+/* Mirasımız CSS */
 .section-yason h3{
     font-size: 5rem;
     color: #212529;
@@ -150,6 +223,41 @@
     margin-bottom: 10px;
 }
 
+/* iletisim */
+.iletisim-bg{
+    background: #F7971E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.iletisim{
+    color: #F5F4EB;
+    width: 100%;
+    height: 100vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+.iletisim-formlar{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.baslik-konum{
+    text-align: center;
+}
+.form-duzen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.iletisim-btn{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 /* Giriş CSS */
 .login{
     position: absolute;
@@ -161,14 +269,13 @@
     height: 100vh;
     top: 0;
     left: 0;
-    
 }
 .login-bg{
     background: url("../images/login.jpg") center center no-repeat;
     background-size: cover;
     height: 100vh;
 }
-.login-title{
+.login-iletisim-title{
     font-size: 2.5rem;
     color: #F5F4EB;
     margin-bottom: 5rem;
@@ -221,6 +328,18 @@
     .card{
         max-width: 100%;
     }
+    /*Özgecmis*/
+    .ozgecmis{
+        flex-direction: column;
+    }
+    .left-nav{
+        width: 100%;
+    }
+    .ana-icerik{
+        width: 100%;
+    }
+    /*İletisim*/
+    
     /*LOGİN*/
 
     .login{
@@ -236,14 +355,11 @@
     }
 }
 @media screen and (max-width: 768px) {
-
     /*Mirasımız*/
 
     .resimler img{
         height: 20rem;
     }
-
-    /*Sehrim*/
 }
 @media screen and (max-width: 576px) { 
     

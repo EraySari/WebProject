@@ -10,9 +10,9 @@
 
     <link rel="stylesheet" href="CSS/style.css">
 
-    <title>Eray Sarı | Ana Sayfa</title>
+    <title>Eray Sarı | İletişim</title>
 </head>
-<body>
+<body class="iletisim-bg">
     <nav class="navbar navbar-expand-lg bg-dark1">
         <div class="container-fluid">
         <a class="navbar-brand" href="index.html">ERAY SARI</a>
@@ -43,6 +43,102 @@
         </div>
         </div>
     </nav>
+    <section>
+        <div class="iletisim p-2">
+            <div class="baslik-konum">
+                <h5 class="login-iletisim-title">İletişim</h5>
+            </div>
+            <div class="iletisim-formlar">
+                <form action="iletisim.php" method="POST" class="form-duzen" name="myForm" id="form1" onsubmit="return formcontrol()">
+                    <div class="m-3" >
+                        <label for="adi">Adınız (gerekli):</label>
+                    <div class="iletisim-forms">
+                        <input type="text" name="ad" id="adi" >
+                    </div>
+
+                    <label for="soyadi">Soyadınız (gerekli):</label>
+                    <div class="iletisim-forms">
+                    <input type="text" name="soyad" id="soyadi" >
+                    </div>
+
+                    <label for="email">E-Mail (gerekli):</label>
+                    <div class="iletisim-forms">
+                        <input type="email" name="mmail" id="email">
+                    </div>
+
+                    <h5>Cinsiyet (gerekli)</h5>
+                    <div class="iletisim-forms">
+                        <input type="radio" name="gender" value="erkek" id="erkek">
+                        <label for="erkek">Erkek</label>
+
+                        <input type="radio" name="gender" value="kadın" id="kadın">
+                        <label for="kadın">Kadın</label>
+                    </div>
+
+                    <label for="date">Doğum Tarihi (gerekli):</label>
+                    <div class="iletisim-forms">
+                        <input type="date" name="dtarihi" id="date" min="1930-01-01" max="2020-12-31">>
+                    </div> 
+                    </div>
+
+                    <div class="m-3">
+                        <div class="iletisim-forms">
+                            <h5>Beğendiğiniz sayfalar</h5>
+                            <input type="checkbox" id="main" name="begeni1" value="main">
+                            <label for="main"> Ana sayfa</label><br>
+    
+                            <input type="checkbox" id="ozgecmis" name="begeni2" value="ozgecmis">
+                            <label for="ozgecmis"> Özgeçmiş</label><br>
+    
+                            <input type="checkbox" id="sehrim" name="begeni3" value="sehrim">
+                            <label for="sehrim"> Şehrim</label><br>
+    
+                            <input type="checkbox" id="mirasımız" name="begeni4" value="mirasımız">
+                            <label for="mirasımız"> Mirasımız </label><br>
+    
+                            <input type="checkbox" id="ilgia" name="begeni5" value="ilgialanlarim">
+                            <label for="ilgia"> İlgialanlarım </label><br>
+    
+                            <input type="checkbox" id="login" name="begeni6" value="iletisim">
+                            <label for="login"> Giriş Sayfası </label><br>
+                        </div> 
+    
+                        <label for="kac">İletişim nedeniniz? </label>
+                        <div class="iletisim-forms">
+                            <select name="neden" id="kac">
+                                <option value="yardim">Yardım</option>
+                                <option value="sikayet">Şikayet</option>
+                                <option value="bilgi">Bilgi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="m-3">
+                        <label for="mesaj">
+                            <textarea class="p-3" name="mesaj" id="mesaj" cols="25" rows="5" placeholder="Mesajınızı buraya yazınız (gerekli)"></textarea>
+                        </label>
+                    </div>
+                    <div class="m-3">
+                        <input type="submit" value="Gonder" class="iletisim-btn">
+                        <input type="reset" value="Temizle" class="iletisim-btn">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer footer-text">
+            <div class="col-md-4 text-center">
+                Eray Sarı
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="https://www.instagram.com/eraysari0"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/EraySari0"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/EraySari"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="col-md-4 text-center">© Tüm hakları saklıdır.</div>
+        </div>
+    </footer>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -50,5 +146,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/style.js"></script>
 </body>
 </html>

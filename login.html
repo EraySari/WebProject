@@ -31,7 +31,7 @@
                 <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="ilgia.html">İlgi Alanlarım</a>
+                <a class="nav-link" href="ilgi.html">İlgi Alanlarım</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="iletisim.html">İletişim</a>
@@ -48,7 +48,7 @@
             <div class="login">
                 <h5 class="login-iletisim-title">Giriş Yap</h5>
                     <div class="login-form">
-                        <form action="">
+                        <form action="giris.php" name="girisFormu"method="POST">
                             <label for="email">Kullanıcı Adı</label>
                                 <div class="form-group">
                                     <input type="email" id="email" name="email" placeholder="Kullanıcı Adınız">
@@ -67,6 +67,24 @@
 
         </div>
     </section>
+
+    <script>
+
+        var formGiris = document.forms["girisFormu"];
+        var email = formGiris.email;
+        var password = formGiris["password"];
+
+        formGiris.onsubmit = function(){
+            if(email.value !="" && password.value !=""){
+                
+            }
+            else{
+                alert("Lütfen boş alan bırakmayınız.");
+                return false;
+            }
+        }
+    </script>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

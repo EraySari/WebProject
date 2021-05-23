@@ -135,6 +135,7 @@
 #iletisim{
     display: flex;
     flex-direction: column;
+    
 }
 #iletisim a{
     color: #F5F4EB;
@@ -156,12 +157,8 @@
 }
 /* Şehrim */
 
-.slider_img{
+.resim-slider{
     height: 30rem;
-}
-.gezilecek_yerler{
-    display: flex;
-    flex-direction: column;
 }
 .cizgi{
     border: 2px solid black;
@@ -184,7 +181,7 @@
     height: 15rem;
 }
 .card-body{
-    background-color:#F5F4EB ;
+    background-color:#F5F4EB;
 }
 
 /* Mirasımız CSS */
@@ -204,7 +201,7 @@
 .section-yason-bg{
     background: url("../images/tasbasibg.jpg") center center no-repeat;
     background-size: cover;
-    height: 75vh;
+    height: 60vh;
     padding:20px;
     text-align: end;
 }
@@ -215,13 +212,73 @@
 }
 .yason-bilgi p{
     font-weight: bold;
-    line-height: 1.8rem;
+    line-height: 1.şşş8rem;
 }
-.resimler img{
-    width: 70%;
-    height: 30rem;
-    margin-bottom: 10px;
+.row .figure img{
+    max-height: 350px !important;
 }
+
+/*İlgi Alanlarım*/
+.seyahat-bg{
+    background: url("../images/seyahat.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exp h1{
+    color: #F5F4EB;
+}
+.exp p{
+    font-size: 1.5rem;
+    color: #909292;
+}
+.ilgi-bg{
+    background: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+}
+.seyahat-font{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8rem;
+    color: #F5F4EB;
+}
+.seyahat-font-bg{
+    background: rgba(255, 193, 7, .4);
+    border-radius: 10px;
+}
+.app{
+    background: rgba(0, 0, 0, .7);
+    color: #F5F4EB;
+    padding: 3rem;
+    border-radius: 20px;
+    width: 90%;
+}
+.hava-d input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #FFD200;
+    text-align: center;
+    color: #F5F4EB;
+    font-size: 1.5rem;
+    width: 50%;
+}
+.content{
+    font-size: 2rem;
+}
+.temp{
+    font-size: 4rem;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* iletisim */
 .iletisim-bg{
@@ -233,7 +290,6 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
 .iletisim{
     color: #F5F4EB;
     width: 100%;
-    height: 100vh;
     font-size: 1.2rem;
     font-weight: bold;
     display: flex;
@@ -317,7 +373,10 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
     color: #F5F4EB;
     border: 2px solid #F5F4EB;
 }
+
+
 @media screen and (max-width: 992px) {
+
     /*Ana Menü*/
     .f1-photo img{
         width: 100%;
@@ -325,9 +384,7 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
         margin-bottom: 10px;
         border: 2px solid #61892F;
     }
-    .card{
-        max-width: 100%;
-    }
+
     /*Özgecmis*/
     .ozgecmis{
         flex-direction: column;
@@ -338,8 +395,7 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
     .ana-icerik{
         width: 100%;
     }
-    /*İletisim*/
-    
+
     /*LOGİN*/
 
     .login{
@@ -355,9 +411,15 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
     }
 }
 @media screen and (max-width: 768px) {
+    
+    /*Sehrim*/
+
+    .card{
+        max-width: 100%;
+    }
     /*Mirasımız*/
 
-    .resimler img{
+    .resim-slider{
         height: 20rem;
     }
 }
@@ -372,13 +434,14 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
         font-size: 3rem;
     }
     .f1-photo img{
-        width: 100%;
         height: 10rem;
-        margin-bottom: 10px;
-        border: 1px solid #61892F;
     }
 
     /*Mirasımız*/
+
+    .resim-slider{
+        height: 15rem;
+    }
 
     .section-yason h3{
         font-size: 3rem;
@@ -397,6 +460,11 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
 
     .card img{
         height: 15rem;
+    }
+    /*İlgi Alanlarım*/
+
+    .hava-d input{
+        width: 80%;
     }
 
     /*LOGİN*/
